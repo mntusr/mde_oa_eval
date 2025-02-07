@@ -1,0 +1,7 @@
+{
+    "hypersim": "./hypersim",
+    "nyuv2": "./nyuv2",
+    "object_insertion_cache": "./obj_ins_cache",
+    "insertable_objects": "./insertable_objects",
+    "cache_dirs_root": "./notebook_cache_dir"
+}
