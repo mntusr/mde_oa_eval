@@ -1,0 +1,39 @@
+[project]
+name = "hello-pytorch3"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "numpy==1.26.3",
+  "ipykernel==6.29.4",
+  "ipywidgets==8.1.5",
+  "voit-inserter==0.1.1",
+  "npy-unittest==0.1.0",
+  "depth-tools==0.1.0",
+  "tqdm==4.64.1",
+  "pandas==2.2.3",
+  "jsonschema==4.23.0",
+  "matplotlib==3.9.4",
+  "torch>=2.6.0,<2.7.0",
+  "torchvision>=0.21.0,<0.22.0",
+  "markupsafe<3.0.0",
+  "transformers==4.46.3",
+  "h5py==3.12.1",
+]
+classifiers = ["Private :: This is not a real package."]
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-repo" },
+]
+torchvision = [
+    { index = "pytorch-repo" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-repo"
+url = "https://download.pytorch.org/whl/cu124"
+
+[tool.isort]
+profile = "black"
